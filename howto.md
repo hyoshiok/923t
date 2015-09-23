@@ -3,17 +3,23 @@
 http://kik.xii.jp/archives/179
 
 1. fork
+
 https://github.com/taikione/923t
+
 click fork button
 
 2. clone
+
  $ git clone https://github.com/<your account>/923t
+
  $ cd 923t
 
 3. make branch
+
  $ git checkout -b your_branch
 
 4. edit files
+
  $ edit files...
 
 5. add and commit
