@@ -16,6 +16,6 @@ get '/yuya' do
   "add hello.rb"
 end
 
-get '/hello/yoshioka' do
+get '/yoshioka' do
   "Hello yoshioka"
 end
