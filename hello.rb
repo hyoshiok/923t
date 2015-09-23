@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 require 'sinatra'
 
 get '/' do
@@ -18,6 +19,12 @@ end
 
 get '/yoshioka' do
   "Hello yoshioka"
+end
+
+
+get '/' do
+  @hello = "こんにちは！じぇじぇじぇ！"
+  erb :index
 end
 
 get '/sushi' do
