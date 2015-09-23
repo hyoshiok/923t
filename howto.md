@@ -44,15 +44,13 @@ click fork button
 
  $ git pull upstream master
 
- $ git push origin master
-
 9. merge 
 
- $ git checkout your_branch
-
- $ git merge master your_branch
+ $ git merge your_branch
 
  resolve conflict
+
+ $ git push origin master
 
 10. pull request
 
