@@ -19,3 +19,7 @@ end
 get '/yoshioka' do
   "Hello yoshioka"
 end
+
+get '/sushi' do
+markdown :sushi
+end
