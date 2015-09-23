@@ -1,9 +1,12 @@
 require 'sinatra'
 require 'erb'
 
-
 get '/' do
 	markdown :index
+end
+
+get 'download/*.*' do
+	params[:splat]
 end
 
 get '/name' do
@@ -13,10 +16,6 @@ end
 post '/next' do
 	@name = params[:name]
 	erb :next
-end
-
-get 'download/*.*' do
-	params[:splat]
 end
 
 get '/yuya' do
