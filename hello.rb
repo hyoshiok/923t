@@ -1,7 +1,18 @@
 require 'sinatra'
+require 'erb'
+
 
 get '/' do
 	markdown :index
+end
+
+get '/name' do
+	erb :name
+end
+
+post '/next' do
+	@name = params[:name]
+	erb :next
 end
 
 get 'download/*.*' do
