@@ -8,6 +8,10 @@ get 'download/*.*' do
 	params[:splat]
 end
 
+get '/yara' do
+	"meow"
+end
+
 get '/yuya' do
   "add hello.rb"
 end
