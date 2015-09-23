@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 require 'sinatra'
 require 'erb'
 
@@ -18,10 +19,24 @@ post '/next' do
 	erb :next
 end
 
+get '/yara' do
+	"meow"
+end
+
 get '/yuya' do
   "add hello.rb"
 end
 
-get '/hello/yoshioka' do
+get '/yoshioka' do
   "Hello yoshioka"
+end
+
+
+get '/' do
+  @hello = "こんにちは！じぇじぇじぇ！"
+  erb :index
+end
+
+get '/sushi' do
+markdown :sushi
 end
